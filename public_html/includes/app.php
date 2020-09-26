@@ -22,21 +22,19 @@ $players = [
 foreach ( $players as $player )
 {
 ?>
-        <tr class="player" data-status="">
-            <td class="color"><div class="inner" style="background-color: <?=$player['color'];?>;"></div></td>
-            <td class="name"><?=$player['name'];?></td>
-            <td class="label js-toggle" data-set-status="imposter">imposter</td>
-            <td class="label js-toggle" data-set-status="sus">sus</td>
-            <td class="label js-toggle" data-set-status="crewmate">crewmate</td>
-            <td class="label js-toggle" data-set-dead="dead">dead</td>
-            <td class="label js-toggle" data-set-status="unused">unused</td>
-        </tr>
-    </li>
+    <tr class="player" data-status="">
+        <td class="color"><div class="inner" style="background-color: <?=$player['color'];?>;"></div></td>
+        <td class="name"><?=$player['name'];?></td>
+        <td class="label js-toggle" data-set-status="imposter">imposter</td>
+        <td class="label js-toggle" data-set-status="sus">sus</td>
+        <td class="label js-toggle" data-set-status="crewmate">crewmate</td>
+        <td class="label js-toggle" data-set-dead="dead">dead</td>
+        <td class="label js-toggle" data-set-status="unused">unused</td>
+    </tr>
 <?php
 }
 
 ?>
-    </tbody>
 </table>
 <p class="reset"><a href="/">reset</a></p>
 <?php
