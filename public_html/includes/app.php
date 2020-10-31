@@ -22,20 +22,22 @@ $players = [
 foreach ( $players as $player )
 {
 ?>
-    <tr class="player" data-status="">
+    <tr class="player" data-status="neutral">
         <td class="color"><div class="inner" style="background-color: <?=$player['color'];?>;"></div></td>
         <td class="name"><?=$player['name'];?></td>
         <td class="label js-toggle" data-set-status="imposter">imposter</td>
         <td class="label js-toggle" data-set-status="sus">sus</td>
+        <td class="label js-toggle" data-set-status="neutral">neutral</td>
+        <td class="label js-toggle" data-set-status="trusty">trusty</td>
         <td class="label js-toggle" data-set-status="crewmate">crewmate</td>
         <td class="label js-toggle" data-set-dead="dead">dead</td>
-        <td class="label js-toggle" data-set-status="unused">unused</td>
+        <td class="label js-toggle" data-set-status="unused">unused/me</td>
     </tr>
 <?php
 }
 
 ?>
 </table>
-<p class="reset"><a href="/">reset</a></p>
+<p class="resets"><a href="/">new lobby</a><a href="/" class="js-reset" style="margin-left: 30px;">new game</a></p>
 <?php
 

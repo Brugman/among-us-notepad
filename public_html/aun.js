@@ -22,4 +22,13 @@
         }
     });
 
+    $('.js-reset').on( 'click', function ( event ) {
+        // prevent default
+        event.stopPropagation();
+        event.preventDefault();
+        //
+        $('.player').removeClass('dead');
+        $('.player:not([data-status="unused"])').attr( 'data-status', 'neutral' );
+    });
+
 })( jQuery );

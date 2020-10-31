@@ -39,36 +39,42 @@ body {
     cursor: pointer;
     user-select: none;
 }
-.reset {
+.resets {
     padding-left: 10px;
 }
-.reset a {
+.resets a {
     text-decoration: none;
     color: #fff;
     opacity: 0.2;
 }
 
-/* status */
+/* active status text */
 .player[data-status="imposter"] [data-set-status="imposter"],
 .player[data-status="sus"] [data-set-status="sus"],
+.player[data-status="neutral"] [data-set-status="neutral"],
+.player[data-status="trusty"] [data-set-status="trusty"],
 .player[data-status="crewmate"] [data-set-status="crewmate"],
-.player[data-status="unused"] [data-set-status="unused"] {
-    opacity: 1;
-}
-
-/* crewmate */
-.player[data-status="crewmate"] .color,
-.player[data-status="crewmate"] .name {
-    opacity: 0.5;
-}
-
-/* dead */
+.player[data-status="unused"] [data-set-status="unused"],
 .player.dead [data-set-dead="dead"] {
     opacity: 1;
 }
 
+/* active status text */
+.player[data-status="imposter"] .name {
+    color: #C61111;
+}
+
+/* trusty */
+.player[data-status="trusty"] .name {
+    opacity: 0.5;
+}
+
+/* crewmate */
+.player[data-status="crewmate"] .name {
+    opacity: 0.25;
+}
+
 /* unused */
-.player[data-status="unused"] .color,
 .player[data-status="unused"] .name {
     opacity: 0.1;
 }
