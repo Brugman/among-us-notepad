@@ -8,10 +8,9 @@ body {
     background-color: #111;
     color: #fff;
     text-transform: uppercase;
-    font-family: Arial;
+    font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
     line-height: 1;
-    font-weight: 600;
 }
 .players {
     margin: 10px;
