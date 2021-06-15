@@ -13,6 +13,12 @@ $players = [
     [ 'name' => 'brown', 'color' => '#71491E' ],
     [ 'name' => 'cyan', 'color' => '#38FFDD' ],
     [ 'name' => 'lime', 'color' => '#50F039' ],
+    [ 'name' => 'maroon', 'color' => '#5F1D2E' ],
+    [ 'name' => 'rose', 'color' => '#ECC0D3' ],
+    [ 'name' => 'banana', 'color' => '#F0E7A8' ],
+    [ 'name' => 'gray', 'color' => '#758593' ],
+    [ 'name' => 'tan', 'color' => '#918877' ],
+    [ 'name' => 'coral', 'color' => '#D76464' ],
 ];
 
 ?>
