@@ -11,8 +11,7 @@
     <title>Among Us Notepad</title>
 
     <!-- app css -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap">
-    <link rel="stylesheet" href="aun.css?v202106160414">
+    <link rel="stylesheet" href="./assets/aun.css?v202106160428">
 
 </head>
 <body>
