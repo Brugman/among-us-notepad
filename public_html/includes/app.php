@@ -22,14 +22,14 @@ $players = [
 ];
 
 ?>
-<table class="players">
+<table class="active-players">
 <?php
 
-foreach ( $players as $player )
+foreach ( $players as $id => $player )
 {
 ?>
-    <tr class="player" data-status="neutral">
-        <td class="color"><div class="inner" style="background-color: <?=$player['color'];?>;"></div></td>
+    <tr class="player" data-status="neutral" data-id="<?=str_pad( ++$id, 3, '0', STR_PAD_LEFT );?>">
+        <td class="color"><div class="inner js-toggle-unused" style="background-color: <?=$player['color'];?>;"></div></td>
         <td class="name"><?=$player['name'];?></td>
         <td class="label js-toggle" data-set-status="imposter">imposter</td>
         <td class="label js-toggle" data-set-status="sus">sus</td>
@@ -37,13 +37,14 @@ foreach ( $players as $player )
         <td class="label js-toggle" data-set-status="trusty">trusty</td>
         <td class="label js-toggle" data-set-status="crewmate">crewmate</td>
         <td class="label js-toggle" data-set-dead="dead">dead</td>
-        <td class="label js-toggle" data-set-status="unused">unused/me</td>
     </tr>
 <?php
 }
 
 ?>
 </table>
-<p class="resets"><a href="/">new lobby</a><a href="/" class="js-reset" style="margin-left: 30px;">new game</a></p>
-<?php
+
+<p class="resets"><a href="/">new lobby</a><a class="js-reset">new game</a></p>
+
+<table class="unused-players"></table>
 
