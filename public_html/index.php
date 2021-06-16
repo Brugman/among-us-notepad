@@ -13,6 +13,12 @@
     <!-- app css -->
     <link rel="stylesheet" href="./assets/aun.css?v202106160428">
 
+    <!-- app favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=1">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?v=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?v=1">
+    <link rel="shortcut icon" href="./favicon.ico?v=1">
+
 </head>
 <body>
 
