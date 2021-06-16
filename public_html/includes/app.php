@@ -29,7 +29,7 @@ foreach ( $players as $id => $player )
 {
 ?>
     <tr class="player" data-status="neutral" data-id="<?=str_pad( ++$id, 3, '0', STR_PAD_LEFT );?>">
-        <td class="color"><div class="inner js-toggle-unused" style="background-color: <?=$player['color'];?>;"></div></td>
+        <td class="color"><div class="inner js-toggle-unused" title="toggle use / dont use" style="background-color: <?=$player['color'];?>;"></div></td>
         <td class="name"><input type="text" value="<?=strtoupper( $player['name'] );?>"></td>
         <td class="label js-toggle" data-set-status="imposter">imposter</td>
         <td class="label js-toggle" data-set-status="sus">sus</td>
